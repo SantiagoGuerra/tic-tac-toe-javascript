@@ -1,0 +1,43 @@
+body > * {  
+  text-align: center;
+}
+
+header{
+  background-color: honeydew;
+  height: 10vh;
+}
+
+main{
+  background-color: lavender;
+  height: 80vh
+}
+
+footer{
+  background-color: khaki;  
+}
+
+.gameboard > div{
+  height: 100px;
+  width: 100px;
+  background-color: lightpink;
+  border: 1px solid black;  
+}
+
+.gameboard{
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-wrap:  wrap;
+  margin: auto;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  height: 10vh;
+}
