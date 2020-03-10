@@ -23,6 +23,6 @@ const GameBoard = () => {
 
 
   return {
-    board
+    board, flow, checkWin
   }
 }
