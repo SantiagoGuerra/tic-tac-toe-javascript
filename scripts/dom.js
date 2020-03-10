@@ -16,9 +16,18 @@ function blockBoard(gameboard) {
 
 Array.from(gameboard.children).forEach( (box, index) => {
   box.addEventListener('click', e => {
-    box.classList.add('box-check')
-    game.board[index] = 'X'
-    console.log(game.board)
+  
+    if(typeof game.board[index] === 'number'){
+      box.classList.add('box-check-' + game.flow);
+      game.board[index] = game.flow;
+      //console.log("ganador: " +  game.checkWin(game.board,game.flow))
+      if (game.checkWin(game.board,game.flow))
+        blockBoard(gameboard)
+      game.flow === 'X'? game.flow = 'O': game.flow = 'X';
+      
+    }
+    console.log(game.board);
+
   })
 })
 
