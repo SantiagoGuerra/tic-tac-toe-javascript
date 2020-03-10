@@ -4,24 +4,17 @@ const game = GameBoard()
 const gameboard = document.querySelector('.gameboard');
 const restart = document.querySelector('#restart')
 
-function blockBoard(gameboard) {
-  Array.from(gameboard.children).forEach( (box, index) => {
-    box.addEventListener('click', e => {
-      
-    })
-  })
-}
-
-
-
 Array.from(gameboard.children).forEach( (box, index) => {
   box.addEventListener('click', e => {
   
-    if(typeof game.board[index] === 'number'){
+    if(typeof game.board[index] === 'number' && game.winner == null){
       box.classList.add('box-check-' + game.flow);
       game.board[index] = game.flow;
-      if (game.checkWin(game.board,game.flow))
-        blockBoard(gameboard)
+      if (game.checkWin(game.board,game.flow)) {
+        game.winner = game.flow
+        console.log('Winner Flow: ' + game.flow)
+        console.log('Winner: ' + game.winner)
+      }
       game.flow === 'X'? game.flow = 'O': game.flow = 'X';
       
     }
