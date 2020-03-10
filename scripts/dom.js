@@ -4,6 +4,16 @@ const game = GameBoard()
 const gameboard = document.querySelector('.gameboard');
 const restart = document.querySelector('#restart')
 
+function blockBoard(gameboard) {
+  Array.from(gameboard.children).forEach( (box, index) => {
+    box.addEventListener('click', e => {
+      
+    })
+  })
+}
+
+
+
 Array.from(gameboard.children).forEach( (box, index) => {
   box.addEventListener('click', e => {
     box.classList.add('box-check')
