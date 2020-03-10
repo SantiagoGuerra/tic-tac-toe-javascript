@@ -9,7 +9,7 @@ header{
 
 main{
   background-color: lavender;
-  height: 80vh;
+  height: 85vh;
   padding-top: 30px;
 }
 
@@ -20,16 +20,17 @@ footer{
 .box {
   height: 100px;
   width: 100px;
-  background-color: lightpink;
+  background-color: rgba(136, 131, 131, 0.582);
   border: 1px solid black;
-  transition: background 1s ease-in-out;
+  transition: all .3s ease-in-out;
   margin-left: 8px;
   margin-bottom: 8px;
 }
 
-/* .box:hover {
-  background: rgb(216, 55, 55);
-} */
+.box:hover {
+  border-color: black;
+  border-width: 5px;
+} 
 
 .gameboard{
   height: 324px;
@@ -40,8 +41,18 @@ footer{
   margin-top: 40px
 }
 
-.box-check {
+.box-check-X {
   background: yellowgreen;
+}
+.box-check-X::before {
+  content: "X"
+}
+
+.box-check-O {
+  background: rgb(124, 150, 221);
+}
+.box-check-O::before {
+  content: "O"
 }
 
 footer {
@@ -52,5 +63,5 @@ footer {
   background-color: rgb(149, 149, 149);
   color: white;
   text-align: center;
-  height: 10vh;
+  height: 5vh;
 }
