@@ -25,10 +25,16 @@ const GameBoard = () => {
     }
   }
 
+  const startGame = (player1_name, player2_name) => {
+    this.player1_name = player1_name;
+    this.player2_name = player2_name;
+    this.on_course = true
+  }
+
   
 
 
   return {
-    board, flow, checkWin, winner
+    board, flow, checkWin, winner, startGame, player2_name, player1_name
   }
 }
