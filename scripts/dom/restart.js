@@ -3,10 +3,10 @@ restart.addEventListener('click', e => {
   game.flow = 'X';
   game.winner = null;
   showMessage('');
-  Array.from(gameboard.children).forEach((box, index) => {
+  Array.from(gameboard.children).forEach((box) => {
     box.classList.remove('box-check-O');
     box.classList.remove('box-check-X');
   });
-  game.on_course = true;
-  console.log(game.board);
+  game.onCourse = true;
+  e.preventDefault();
 });
