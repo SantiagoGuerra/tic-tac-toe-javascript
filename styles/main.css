@@ -9,7 +9,7 @@ header{
 
 main{
   background-color: lavender;
-  height: 85vh;
+  /*height: 85vh;*/
   padding-top: 30px;
   padding-bottom: 500px;
 }
@@ -56,13 +56,10 @@ footer{
   content: "O"
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+footer { 
   width: 100%;
   background-color: rgb(149, 149, 149);
   color: white;
   text-align: center;
-  height: 5vh;
+  height: 10vh;
 }
