@@ -1,3 +1,14 @@
+/* global
+  game,
+  showMessage, newGame,
+  restart,
+  start,
+  player1DisplayName,
+  player2DisplayName,
+  inputPlayer1,
+  inputPlayer2 */
+/* eslint no-undef: "error" */
+
 start.addEventListener('click', e => {
   game.player1Name = (inputPlayer1.value === '') ? 'Anonymous 1' : inputPlayer1.value;
   inputPlayer1.classList.add('d-none');

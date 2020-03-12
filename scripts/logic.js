@@ -1,5 +1,4 @@
-/* eslint no-unused-vars: 2 */
-/* global GameBoard */
+/* eslint no-unused-vars: */
 
 const GameBoard = () => {
   const board = [1, 2, 3, 4, 5, 6, 7, 8, 9];

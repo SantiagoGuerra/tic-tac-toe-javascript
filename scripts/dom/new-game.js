@@ -1,3 +1,14 @@
+/* global
+  game,
+  showMessage, newGame,
+  restart,
+  start,
+  player1DisplayName,
+  player2DisplayName,
+  inputPlayer1,
+  inputPlayer2 */
+/* eslint no-undef: "error" */
+
 newGame.addEventListener('click', e => {
   restart.dispatchEvent(new Event('click'));
   game.onCourse = false;
@@ -18,5 +29,5 @@ newGame.addEventListener('click', e => {
   inputPlayer2.classList.remove('d-none');
   inputPlayer2.value = '';
   game.player2Name = '';
-  e.preventDefault()
+  e.preventDefault();
 });

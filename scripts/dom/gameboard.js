@@ -1,3 +1,6 @@
+/* global game, showMessage, gameboard */
+/* eslint no-undef: "error" */
+
 Array.from(gameboard.children).forEach((box, index) => {
   box.addEventListener('click', e => {
     if (typeof game.board[index] === 'number' && game.winner == null && game.onCourse) {

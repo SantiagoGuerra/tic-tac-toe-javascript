@@ -1,3 +1,6 @@
+/* global GameBoard, restart */
+/* eslint no-undef: "error" */
+/* eslint no-unused-vars: */
 const restart = document.querySelector('#restart');
 const newGame = document.querySelector('#new-game');
 const start = document.querySelector('#start-game');
