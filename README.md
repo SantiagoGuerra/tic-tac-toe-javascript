@@ -64,7 +64,7 @@ This is also part of the Odin project curriculum [Odin Project](https://www.theo
 <!-- ABOUT THE PROJECT -->
 ## Live Version
 
-If you want to see it you just need to have a web browser and folow this [link](#)
+If you want to see it you just need to have a web browser and folow this [link - Game branch](https://raw.githack.com/SantiagoGuerra/tic-tac-toe-javascript/game/index.html)
 
 ### Built With
 This project was built using these technologies.
@@ -81,7 +81,7 @@ This project was built using these technologies.
 <br />
 [Github: @SantiagoGuerra](https://github.com/SantiagoGuerra) - guerrasantiago19@gmail.com
 
-Project Link: [https://SantiagoGuerra.github.io/tic-tac-toe-javascript)
+Project Link: [Game branch](https://raw.githack.com/SantiagoGuerra/tic-tac-toe-javascript/game/index.html)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
