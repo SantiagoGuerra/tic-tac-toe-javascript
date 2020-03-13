@@ -1,21 +1,76 @@
-body > * {  
+
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  background: rgb(5, 112, 101);
+  color: #fff;
+  padding: 62px;
   text-align: center;
 }
 
-header{
-  background-color: honeydew;
-  height: 10vh;
-}
-
-main{
+.main-container {
   background-color: lavender;
-  /*height: 85vh;*/
-  padding-top: 30px;
-  padding-bottom: 500px;
+  display: flex;
+  height: 100vh;
 }
 
-footer{
-  background-color: khaki;  
+.panel {
+  flex-basis: 30%;
+  background-color: rgb(49, 92, 88);
+}
+
+.messages {
+  margin-bottom: 42px;
+}
+
+.messages > p {
+  color: red;
+  font-size: 18px;
+  text-align: center;
+  padding: 32px 16px;
+}
+
+.form {
+  padding: 8px 62px;
+  background-color: green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.input-field {
+  width: 100%;
+  background: red;
+  margin-bottom: 8px;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 18px;
+  display: block;
+  color: #fff;
+  text-align: center;
+}
+
+.player {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  display: block;
+}
+
+.field {
+  border-radius: 4px;
 }
 
 .box {
@@ -26,40 +81,58 @@ footer{
   transition: all .3s ease-in-out;
   margin-left: 8px;
   margin-bottom: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  color: #fff;
 }
 
 .box:hover {
   border-color: black;
   border-width: 5px;
-} 
+}
+
+.arena {
+  background: yellow;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
 .gameboard{
   height: 324px;
   width: 324px;
   display: flex;
   flex-wrap:  wrap;
-  margin: auto;
-  margin-top: 40px
+  
 }
 
 .box-check-X {
   background: yellowgreen;
+  
 }
 .box-check-X::before {
-  content: "X"
+  content: "x"
 }
 
 .box-check-O {
   background: rgb(124, 150, 221);
 }
 .box-check-O::before {
-  content: "O"
+  content: "o"
 }
 
-footer { 
+.footer { 
   width: 100%;
-  background-color: rgb(149, 149, 149);
+  background-color: rgb(77, 77, 77);
   color: white;
-  text-align: center;
-  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 12px
 }

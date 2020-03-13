@@ -8,56 +8,70 @@
   <title>Tic Tac Toe</title>
 </head>
 <body>
-  <header>
-    <h1>Let's play Tic Tac Toe</h1>
-  </header>
-  <main class="">
-    <div class="messages">
-    </div>
-    <form>
-      <label>Player 1:</label>
-      <input id="input-player1" type="text" name="player1-name"> <br>
-      <p id="player1-name" class="d-none">Pepe</p>
-      <label>Player 2:</label>
-      <input id="input-player2" type="text" name="player2-name"> <br>
-      <p id="player2-name" class="d-none">Juan</p>
-      <input type="submit" id="start-game" value="Let's play!">
-    </form>
-    <button id="restart" class="d-none">Restart</button>
-    <button id="new-game" class="d-none">New Game</button>
-    
-    <div class="gameboard">
-
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-
-    </div>
-    <div class="End Game">      
-      <p id="victory"></p>      
-      <p id="draw"> </p>      
+  
+  <main class="main-container">
+    <div class="panel">
+      <header>
+        <h1>Let's play Tic Tac Toe</h1>
+      </header>
+      <form class="form ">
+        <div class="input-field">
+          <button id="new-game" class="d-none btn btn-primary w-100">New Game</button>
+        </div>
+        <div class="input-field">
+          <label for="input-player1" class="label" class="field">Player 1:</label>
+          <input id="input-player1" type="text" name="player1-name" class="form-control">
+          <p id="player1-name" class="d-none player"></p>
+        </div>
+        <div class="input-field">
+          <label for="input-player2" class="label" class="field">Player 2:</label>
+          <input id="input-player2" type="text" name="player2-name" class="form-control">
+          <p id="player2-name" class="d-none player"></p>
+        </div>
+        <div class="input-field">
+          <input type="submit" id="start-game" value="Let's play!" class="btn btn-primary">
+        </div>
+        <div class="input-field">
+          <button id="restart" class="d-none btn btn-primary  w-100">Restart</button>
+        </div>
+      </form>
+      
     </div>
     
+    <div class="arena">
+      <div class="messages">
+      </div>
+      <div class="gameboard">
 
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+  
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+  
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+  
+      </div>
+    </div>
+    
+  
   </main>
-  <footer class="align-baseline">
-    <p>Made by <a href="https://github.com/SantiagoGuerra/">Santiago Guerra</a> & <a href="https://github.com/IvanDerlich/">Ivan Derlich</a></p
+  <footer class="footer">
+    <p>Made by <a href="https://github.com/SantiagoGuerra/">Santiago Guerra</a> & <a href="https://github.com/IvanDerlich/">Ivan Derlich</a></p>
     <p><a href="https://github.com/SantiagoGuerra/tic-tac-toe-javascript">Project Description</a></p>
-    ></footer>
-</body>  
+  </footer>
+
   <script src="scripts/logic.js"></script>
   <script src="scripts/dom/load.js"></script>
   <script src="scripts/dom/gameboard.js"></script>
   <script src="scripts/dom/restart.js"></script>
   <script src="scripts/dom/new-game.js"></script>
   <script src="scripts/dom/start.js"></script>
+</body>  
+
   
 </html>
