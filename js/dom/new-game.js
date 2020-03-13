@@ -1,17 +1,19 @@
 /* global
-  game,
-  showMessage, newGame,
+  showMessage,
+  newGame,
   restart,
   start,
-  player1DisplayName,
-  player2DisplayName,
+  flow,
   inputPlayer1,
-  inputPlayer2 */
+  inputPlayer2,
+  player1DisplayName,
+  player2DisplayName
+  */
 /* eslint no-undef: "error" */
 
 newGame.addEventListener('click', e => {
   restart.dispatchEvent(new Event('click'));
-  game.onCourse = false;
+  flow.onCourse = false;
 
   showMessage('Insert player names');
   restart.classList.add('d-none');
@@ -24,10 +26,10 @@ newGame.addEventListener('click', e => {
 
   inputPlayer1.classList.remove('d-none');
   inputPlayer1.value = '';
-  game.player1Name = '';
+  flow.player1.name = '';
 
   inputPlayer2.classList.remove('d-none');
   inputPlayer2.value = '';
-  game.player2Name = '';
+  flow.player2.name = '';
   e.preventDefault();
 });
