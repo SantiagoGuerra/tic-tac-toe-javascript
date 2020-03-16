@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+  
+  <main class="main-container">
+    <div class="panel">
+      <header>
+        <h1>Let's play Tic Tac Toe</h1>
+      </header>
+      <form class="form ">
+        <div class="input-field">
+          <button id="new-game" class="d-none btn btn-primary w-100">New Game</button>
+        </div>
+        <div class="input-field">
+          <label for="input-player1" class="label" class="field">Player 1:</label>
+          <input id="input-player1" type="text" name="player1-name" class="form-control">
+          <p id="player1-name" class="d-none player"></p>
+        </div>
+        <div class="input-field">
+          <label for="input-player2" class="label" class="field">Player 2:</label>
+          <input id="input-player2" type="text" name="player2-name" class="form-control">
+          <p id="player2-name" class="d-none player"></p>
+        </div>
+        <div class="input-field">
+          <input type="submit" id="start-game" value="Let's play!" class="btn btn-primary">
+        </div>
+        <div class="input-field">
+          <button id="restart" class="d-none btn btn-primary  w-100">Restart</button>
+        </div>
+      </form>
+      
+    </div>
+    
+    <div class="arena">
+      <div class="messages">
+      </div>
+      <div class="gameboard">
+
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+  
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+  
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+  
+      </div>
+    </div>
+    
+  
+  </main>
+  <footer class="footer">
+    <p>Made by <a href="https://github.com/SantiagoGuerra/">Santiago Guerra</a> & <a href="https://github.com/IvanDerlich/">Ivan Derlich</a></p>
+    <p><a href="https://github.com/SantiagoGuerra/tic-tac-toe-javascript">Project Description</a></p>
+  </footer>
+</body>    
+  <script src="js/logic/flow.js"></script>
+  <script src="js/logic/board.js"></script>
+  <script src="js/logic/player.js"></script>
+  <script src="js/logic/main.js"></script>
+
+  <script src="js/dom/selectors.js"></script>
+  <script src="js/dom/load.js"></script>
+  <script src="js/dom/gameboard.js"></script>
+  <script src="js/dom/restart.js"></script>
+  <script src="js/dom/new-game.js"></script>
+  <script src="js/dom/start.js"></script>
+  
+</html>
