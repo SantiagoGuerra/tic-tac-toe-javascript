@@ -1,6 +1,5 @@
-/* global Player, restart */
-/* eslint no-undef: "error" */
-/* eslint-disable no-unused-vars */
+import { restart } from '../dom/selectors';
+import Player from './player';
 
 const Flow = (() => {
   const currentPlayerSymbol = 'X';
