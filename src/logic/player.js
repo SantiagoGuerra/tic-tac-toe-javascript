@@ -1,4 +1,3 @@
-
 const Player = ((inputName) => {
   const name = inputName;
   return {
