@@ -34,7 +34,6 @@ test('Draw', () => {
   expect(
     board.check(board.values, 'X'),
   ).toStrictEqual(false);
-
 });
 
 test('Nobody wins yet', () => {
