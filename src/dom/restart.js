@@ -1,10 +1,7 @@
-/* global
-  board,
-  flow,
-  showMessage,
-  restart,
-  gameboardDOM */
-/* eslint no-undef: "error" */
+import { restart, gameboardDOM } from './selectors';
+import showMessage from './load';
+import { flow, board } from '../logic/main';
+
 
 restart.addEventListener('click', e => {
   showMessage('');
@@ -13,13 +10,11 @@ restart.addEventListener('click', e => {
     box.classList.remove('box-check-X');
   });
 
-  // <improvement> Inside flow.restart()
   flow.winner = null;
   board.values = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   flow.currentPlayerSymbol = 'X';
   flow.winner = null;
   flow.onCourse = true;
-  // </improvement>
 
   e.preventDefault();
 });
