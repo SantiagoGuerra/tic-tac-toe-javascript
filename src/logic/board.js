@@ -29,3 +29,6 @@ const Board = (() => {
     check,
   };
 });
+
+
+export default Board;

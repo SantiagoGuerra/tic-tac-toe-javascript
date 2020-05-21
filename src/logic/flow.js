@@ -25,3 +25,5 @@ const Flow = (() => {
     restart,
   };
 });
+
+export default Flow;

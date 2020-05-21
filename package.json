@@ -17,7 +17,11 @@
     "s": "webpack-dev-server --mode development --open",
     "w": "webpack --mode production --watch"
   },
-  "jest": { "transform": { "^.+\\.jsx?$": "babel-jest" } },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SantiagoGuerra/tic-tac-toe-javascript.git"

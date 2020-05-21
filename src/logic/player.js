@@ -6,3 +6,5 @@ const Player = ((inputName) => {
     name,
   };
 });
+
+export default Player;
