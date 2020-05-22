@@ -1,7 +1,3 @@
-/* global flow */
-/* eslint no-undef: "error" */
-/* eslint no-unused-vars: */
-
 const Board = (() => {
   const values = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   const check = (inputValues, playerSymbol) => {
@@ -29,3 +25,6 @@ const Board = (() => {
     check,
   };
 });
+
+
+export default Board;

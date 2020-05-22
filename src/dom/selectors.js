@@ -1,0 +1,9 @@
+export const restart = document.querySelector('#restart');
+export const newGame = document.querySelector('#new-game');
+export const start = document.querySelector('#start-game');
+export const gameboardDOM = document.querySelector('.gameboard');
+export const messages = document.querySelector('.messages');
+export const inputPlayer1 = document.querySelector('#input-player1');
+export const inputPlayer2 = document.querySelector('#input-player2');
+export const player1DisplayName = document.querySelector('#player1-name');
+export const player2DisplayName = document.querySelector('#player2-name');

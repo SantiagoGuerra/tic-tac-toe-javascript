@@ -1,14 +1,10 @@
-/* global
-  flow,
-  Player,
-  showMessage, newGame,
-  restart,
-  start,
-  player1DisplayName,
-  player2DisplayName,
-  inputPlayer1,
-  inputPlayer2 */
-/* eslint no-undef: "error" */
+import {
+  start, inputPlayer1, inputPlayer2, player1DisplayName, player2DisplayName, newGame, restart,
+} from './selectors';
+import { flow } from '../logic/main';
+import showMessage from './load';
+import Player from '../logic/player';
+
 
 start.addEventListener('click', e => {
   flow.player1 = Player((inputPlayer1.value === '') ? 'Anonymous 1' : inputPlayer1.value);
@@ -17,12 +13,10 @@ start.addEventListener('click', e => {
   flow.player2 = Player((inputPlayer2.value === '') ? 'Anonymous 2' : inputPlayer2.value);
   inputPlayer2.classList.add('d-none');
 
-  // //Hide the message "please insert player names"
   showMessage('');
 
-  start.classList.add('d-none'); // hides "Let's start button"
+  start.classList.add('d-none');
 
-  // Shows player names in p tag
   player1DisplayName.textContent = flow.player1.name;
   player1DisplayName.classList.remove('d-none');
 
@@ -30,8 +24,8 @@ start.addEventListener('click', e => {
   player2DisplayName.classList.remove('d-none');
 
 
-  newGame.classList.remove('d-none'); // shows new game button
-  restart.classList.remove('d-none'); // shows restart button
+  newGame.classList.remove('d-none');
+  restart.classList.remove('d-none');
 
   flow.onCourse = true;
   e.preventDefault();

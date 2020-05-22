@@ -1,15 +1,8 @@
-/* global
-  showMessage,
-  newGame,
-  restart,
-  start,
-  flow,
-  inputPlayer1,
-  inputPlayer2,
-  player1DisplayName,
-  player2DisplayName
-  */
-/* eslint no-undef: "error" */
+import {
+  newGame, restart, start, player1DisplayName, player2DisplayName, inputPlayer1, inputPlayer2,
+} from './selectors';
+import { flow } from '../logic/main';
+import showMessage from './load';
 
 newGame.addEventListener('click', e => {
   restart.dispatchEvent(new Event('click'));

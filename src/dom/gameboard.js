@@ -1,5 +1,6 @@
-/* global showMessage, board, flow, gameboardDOM */
-/* eslint no-undef: "error" */
+import showMessage from './load';
+import { gameboardDOM } from './selectors';
+import { flow, board } from '../logic/main';
 
 Array.from(gameboardDOM.children).forEach((box, index) => {
   box.addEventListener('click', e => {
