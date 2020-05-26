@@ -42,6 +42,7 @@
   </p>
 </p>
 
+![](docs/vid.gif)
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
